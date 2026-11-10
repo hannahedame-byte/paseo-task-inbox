@@ -4,6 +4,7 @@ import { memo, useCallback, useMemo, useRef, type ComponentType, type ReactNode 
 import { useTranslation } from "react-i18next";
 import { View, type StyleProp, type ViewStyle } from "react-native";
 import { StyleSheet } from "react-native-unistyles";
+import { TaskInboxSidebarGroup } from "@/task-inbox/sidebar-group";
 import { SidebarHeaderRow } from "@/components/sidebar/sidebar-header-row";
 import { useShortcutKeys } from "@/hooks/use-shortcut-keys";
 import { PluginSidebarItem } from "@/plugins/sidebar-items";
@@ -134,14 +135,17 @@ function SidebarHistoryRow({ onBeforeNavigate }: SidebarNavRowProps) {
   }, [onBeforeNavigate]);
 
   return (
-    <SidebarHeaderRow
-      icon={History}
-      label={t(builtinSidebarNavLabelKey("history"))}
-      onPress={handlePress}
-      isActive={pathname.includes("/sessions")}
-      testID="sidebar-sessions"
-      variant="compact"
-    />
+    <>
+      <TaskInboxSidebarGroup onBeforeNavigate={onBeforeNavigate} />
+      <SidebarHeaderRow
+        icon={History}
+        label={t(builtinSidebarNavLabelKey("history"))}
+        onPress={handlePress}
+        isActive={pathname.includes("/sessions")}
+        testID="sidebar-sessions"
+        variant="compact"
+      />
+    </>
   );
 }
 

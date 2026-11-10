@@ -2,6 +2,28 @@ import { en, type TranslationResources } from "./en";
 import { pluginSettings } from "./plugin-settings";
 
 export const ar: TranslationResources = {
+  taskInbox: {
+    title: "صندوق المهام",
+    all: "كل الجلسات",
+    backlog: "قائمة الانتظار",
+    todo: "مهام مطلوبة",
+    "needs-review": "بحاجة إلى مراجعة",
+    done: "مكتملة",
+    cancelled: "ملغاة",
+    flagged: "مميزة",
+    archived: "مؤرشفة",
+    status: "حالة المهمة",
+    change: "تغيير حالة {{title}} ({{status}})",
+    flag: "تمييز الجلسة",
+    unflag: "إزالة التمييز",
+    expand: "إظهار فلاتر الحالة",
+    collapse: "إخفاء فلاتر الحالة",
+    chooseView: "اختيار العرض",
+    empty: "لا توجد جلسات في هذا العرض بعد.",
+    connect: "اتصل بمضيف لعرض جلساته.",
+    moreArchive: "حمّل الجلسات الأقدم للعثور على العمل المؤرشف.",
+    loadError: "تعذّر تحميل الجلسات.",
+  },
   pluginCombobox: {
     searching: "جارٍ البحث…",
     empty: "لا توجد نتائج",

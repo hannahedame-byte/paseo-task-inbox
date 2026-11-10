@@ -2,6 +2,28 @@ import { en, type TranslationResources } from "./en";
 import { pluginSettings } from "./plugin-settings";
 
 export const ko: TranslationResources = {
+  taskInbox: {
+    title: "작업 받은편지함",
+    all: "모든 세션",
+    backlog: "백로그",
+    todo: "할 일",
+    "needs-review": "검토 필요",
+    done: "완료",
+    cancelled: "취소됨",
+    flagged: "깃발 표시됨",
+    archived: "보관됨",
+    status: "작업 상태",
+    change: "{{title}} 상태 변경({{status}})",
+    flag: "깃발 표시",
+    unflag: "깃발 제거",
+    expand: "상태 필터 펼치기",
+    collapse: "상태 필터 접기",
+    chooseView: "보기 선택",
+    empty: "이 보기에 아직 세션이 없습니다.",
+    connect: "세션을 보려면 호스트에 연결하세요.",
+    moreArchive: "보관된 작업을 찾으려면 이전 세션을 불러오세요.",
+    loadError: "세션을 불러올 수 없습니다.",
+  },
   pluginCombobox: {
     searching: "검색 중…",
     empty: "결과 없음",

@@ -2,6 +2,28 @@ import { en, type TranslationResources } from "./en";
 import { pluginSettings } from "./plugin-settings";
 
 export const ja: TranslationResources = {
+  taskInbox: {
+    title: "タスク受信箱",
+    all: "すべてのセッション",
+    backlog: "バックログ",
+    todo: "未着手",
+    "needs-review": "要確認",
+    done: "完了",
+    cancelled: "キャンセル済み",
+    flagged: "フラグ付き",
+    archived: "アーカイブ済み",
+    status: "タスクのステータス",
+    change: "「{{title}}」のステータスを変更（{{status}}）",
+    flag: "フラグを付ける",
+    unflag: "フラグを外す",
+    expand: "ステータスフィルターを展開",
+    collapse: "ステータスフィルターを折りたたむ",
+    chooseView: "表示を選択",
+    empty: "このビューにはまだセッションがありません。",
+    connect: "ホストに接続するとセッションが表示されます。",
+    moreArchive: "アーカイブを確認するには、以前のセッションを読み込んでください。",
+    loadError: "セッションを読み込めません。",
+  },
   pluginCombobox: {
     searching: "検索中…",
     empty: "結果がありません",

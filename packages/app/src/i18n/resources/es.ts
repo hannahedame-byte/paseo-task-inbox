@@ -2,6 +2,28 @@ import { en, type TranslationResources } from "./en";
 import { pluginSettings } from "./plugin-settings";
 
 export const es: TranslationResources = {
+  taskInbox: {
+    title: "Bandeja de tareas",
+    all: "Todas las sesiones",
+    backlog: "Por planificar",
+    todo: "Por hacer",
+    "needs-review": "Por revisar",
+    done: "Hecho",
+    cancelled: "Cancelado",
+    flagged: "Marcadas",
+    archived: "Archivadas",
+    status: "Estado de la tarea",
+    change: "Cambiar el estado de {{title}} ({{status}})",
+    flag: "Marcar sesión",
+    unflag: "Quitar marca",
+    expand: "Mostrar filtros de estado",
+    collapse: "Ocultar filtros de estado",
+    chooseView: "Elegir vista",
+    empty: "Todavía no hay sesiones en esta vista.",
+    connect: "Conecta un servidor para ver sus sesiones.",
+    moreArchive: "Carga sesiones anteriores para buscar trabajo archivado.",
+    loadError: "No se pudieron cargar las sesiones.",
+  },
   pluginCombobox: {
     searching: "Buscando…",
     empty: "Sin resultados",

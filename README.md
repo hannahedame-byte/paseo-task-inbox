@@ -4,6 +4,27 @@
 
 <h1 align="center">Paseo</h1>
 
+## Task inbox edition
+
+This fork adds a task inbox for writing, research, creative reviews, and other work you do with Paseo agents. Open **All sessions** in the sidebar, then choose **Backlog**, **Todo**, **Needs Review**, **Done**, or **Cancelled**. Select a session to continue the conversation, or use its status menu to move it. Existing sessions start in **Todo**. Status changes organize your work without changing the agent’s permissions or stopping its session.
+
+![Needs Review on desktop](docs/qa-evidence/task-inbox/task-inbox-desktop.png)
+
+[See the phone layout](docs/qa-evidence/task-inbox/task-inbox-phone.png).
+
+To try the fork in a browser, use Node 22.20.0 and run these commands from the repository root:
+
+```sh
+npm ci
+npm run build:server
+npm run build:web --workspace=@getpaseo/app
+PASEO_LISTEN=127.0.0.1:6799 PASEO_RELAY_ENABLED=false PASEO_WEB_UI_ENABLED=true \
+  PASEO_WEB_UI_DIST_DIR="$PWD/packages/app/dist" \
+  node packages/cli/bin/paseo daemon run --home "$PWD/.dev/task-inbox-home"
+```
+
+Open [the local task inbox](http://127.0.0.1:6799/task-inbox). This preview uses its own Paseo data directory. For cross-device use, open this fork’s web client over your private HTTPS address or pair a native build of the fork. Run the fork’s daemon as well to receive immediate status updates for closed sessions. See [Paseo connectivity](public-docs/connectivity.md) for the supported connection options.
+
 <p align="center">
   <a href="README.md">English</a> ·
   <a href="README.zh-CN.md">简体中文</a> ·

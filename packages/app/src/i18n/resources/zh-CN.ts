@@ -2,6 +2,28 @@ import { en, type TranslationResources } from "./en";
 import { pluginSettings } from "./plugin-settings";
 
 export const zhCN: TranslationResources = {
+  taskInbox: {
+    title: "任务收件箱",
+    all: "全部会话",
+    backlog: "待规划",
+    todo: "待办",
+    "needs-review": "待审核",
+    done: "已完成",
+    cancelled: "已取消",
+    flagged: "已标记",
+    archived: "已归档",
+    status: "任务状态",
+    change: "更改「{{title}}」的状态（{{status}}）",
+    flag: "标记会话",
+    unflag: "取消标记",
+    expand: "展开状态筛选",
+    collapse: "收起状态筛选",
+    chooseView: "选择视图",
+    empty: "此视图暂无会话。",
+    connect: "连接主机以查看会话。",
+    moreArchive: "加载更早的会话以查看归档内容。",
+    loadError: "无法加载会话。",
+  },
   pluginCombobox: {
     searching: "搜索中…",
     empty: "无结果",

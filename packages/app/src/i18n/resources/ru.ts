@@ -2,6 +2,28 @@ import { en, type TranslationResources } from "./en";
 import { pluginSettings } from "./plugin-settings";
 
 export const ru: TranslationResources = {
+  taskInbox: {
+    title: "Входящие задачи",
+    all: "Все сеансы",
+    backlog: "В планах",
+    todo: "К выполнению",
+    "needs-review": "На проверке",
+    done: "Готово",
+    cancelled: "Отменено",
+    flagged: "Отмеченные",
+    archived: "В архиве",
+    status: "Статус задачи",
+    change: "Изменить статус «{{title}}» ({{status}})",
+    flag: "Отметить сеанс",
+    unflag: "Снять отметку",
+    expand: "Развернуть фильтры статуса",
+    collapse: "Свернуть фильтры статуса",
+    chooseView: "Выбрать представление",
+    empty: "В этом представлении пока нет сеансов.",
+    connect: "Подключитесь к хосту, чтобы увидеть его сеансы.",
+    moreArchive: "Загрузите более ранние сеансы для поиска архивных.",
+    loadError: "Не удалось загрузить сеансы.",
+  },
   pluginCombobox: {
     searching: "Поиск…",
     empty: "Нет результатов",
